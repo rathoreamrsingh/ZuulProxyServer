@@ -1,0 +1,14 @@
+zuul:
+  #Service will be mapped under the /api URI
+  prefix: /api
+  routes: 
+    hello-world-service: 
+      path: /hello-server/**
+      #url: http://localhost:8091
+      serviceId: HELLO-WORLD-SERVICE
+      
+ 
+eureka: 
+  client:
+    serviceUrl: 
+      defaultZone: http://localhost:8761/eureka/
